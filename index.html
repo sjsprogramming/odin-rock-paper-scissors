@@ -61,9 +61,9 @@
         return (playerWin += 1);
       }
       }
-
+      // Plays 5 rounds of game and prints current scores.
       function game() {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < amountRounds; i++) {
       playRound(getPlayerSelection(), computerPlay());
     console.log("Player Score = " + playerWin + ",  Computer score = " + computerWin + ", Total ties = " + ties);
     }
@@ -72,15 +72,9 @@
     let playerWin = 0;
     let computerWin = 0;
     let ties = 0;
-
-    //Plays a round of rock paper scissors and returns results
-    
-    //playRound(getPlayerSelection(), computerPlay());
-    //console.log("Player Score = " + playerWin + ",  Computer score = " + //computerWin + ", Total ties = " + ties);
-
-    //Plays 5 total rouns of rock paper scissors and returns results
-  
+    amountRounds = prompt("How many rounds would you like to play?")
   game();
+  alert("Player Score = " + playerWin + ",  Computer score = " + computerWin + ", Total ties = " + ties)
     
 
   </script>
